@@ -1,0 +1,12 @@
+ktor:
+    development: true
+    application:
+        modules:
+            - br.com.residuecollection.app.ApplicationKt.module
+    deployment:
+        port: 8080
+        watch:
+            - classes
+            - resources
+            - main
+            - plugins
