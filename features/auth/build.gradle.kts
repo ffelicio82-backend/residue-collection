@@ -21,7 +21,7 @@ dependencies {
     implementation(libs.logback.classic)
     implementation(libs.koin.ktor)
     testImplementation(libs.ktor.server.test.host)
-    testImplementation(libs.kotlin.test.junit)
+    testImplementation(libs.jupiter.test)
     testImplementation(libs.koin.test)
     testImplementation(libs.mockk.test)
 }
