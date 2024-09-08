@@ -15,6 +15,8 @@ dependencies {
 
     implementation(libs.koin.ktor)
     testImplementation(libs.kotlin.test.junit)
+    testImplementation(libs.koin.test)
+    testImplementation(libs.mockk.test)
 }
 
 tasks.test {
