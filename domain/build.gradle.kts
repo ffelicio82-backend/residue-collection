@@ -12,7 +12,9 @@ repositories {
 dependencies {
     implementation(project(":core"))
 
-    testImplementation(libs.kotlin.test.junit)
+    implementation(libs.kotlin.coroutines)
+
+    testImplementation(libs.jupiter.test)
     testImplementation(libs.mockk.test)
 }
 
