@@ -1,8 +1,8 @@
 package br.com.residuecollection.core
 
-import br.com.residuecollection.core.Usecase.Request
+import br.com.residuecollection.core.Usecase.Params
 
-abstract class Usecase<RESULT, REQUEST : Request> {
-    abstract suspend fun execute(request: REQUEST) : Either<String, RESULT>
-    abstract class Request
+abstract class Usecase<R, P : Params> {
+    abstract suspend fun execute(params : P) : Either<Failure, R>
+    abstract class Params
 }
