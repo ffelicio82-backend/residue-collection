@@ -13,6 +13,7 @@ dependencies {
     implementation(project(":core"))
 
     testImplementation(libs.kotlin.test.junit)
+    testImplementation(libs.mockk.test)
 }
 
 tasks.test {
